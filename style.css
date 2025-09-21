@@ -107,16 +107,24 @@ nav {
 }
 
 .hero-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #ffffff;
+    width: 150px; /* Reduced size */
+    height: 150px; /* Reduced size */
+    border-radius: 50%; /* Makes it circular */
+    background-color: #ffffff; /* Fallback background if image doesn't load */
     margin: 2rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    color: #DC143C;
+    display: flex; /* Kept for centering text if any, but not needed for image itself */
+    align-items: center; /* Kept */
+    justify-content: center; /* Kept */
+    font-size: 4rem; /* Kept */
+    color: #DC143C; /* Kept */
+
+    /* --- New/Modified properties for the background image --- */
+    background-image: url('Pic_imresizer.jpg'); /* Set your image here */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    border: 5px solid rgba(255, 255, 255, 0.5); /* Optional: Add a subtle white border */
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2); /* Optional: Add a subtle outer glow */
 }
 
 .cta-buttons {
